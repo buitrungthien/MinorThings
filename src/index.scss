@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  line-height: 1.3rem;
+}
+
+body {
+  background-color: #ebf5fc;
+  background-color: rgba(156, 168, 249, 0.5);
+}
+
+:root {
+  --dark-blue-grey: #0f1e29;
+  --dark: #27343e;
+  --charcoal-grey: #3f4b53;
+  --slate-grey: #576169;
+  --battleship-grey: #6f787e;
+  --blue-grey: #878e94;
+  --cool-grey: #9fa5a9;
+  --light-grey-blue: #b7bbbf;
+  --light-blue-grey: #cfd2d4;
+  --very-light-blue: #e7e8ea;
+  --pale-grey: #f2f3f4;
+  --white: #fafafa;
+  --white-two: #ffffff;
+  --red-brown: #a61a19;
+  --brick: #d52220;
+  --tomato: #ee2624;
+  --coral: #f1514f;
+  --salmon: #f47c7b;
+  --light-peach: #fbcbcb;
+  --very-light-pink: #fde5e4;
+  --very-light-pink-two: #fef2f2;
+  --cinnamon: #a64b09;
+  --rusty-orange: #d5600c;
+  --orange: #ee6c0e;
+  --dusty-orange: #f1893e;
+  --apricot: #f4a66e;
+  --light-peach-two: #fbdcc5;
+  --very-light-pink-three: #fdede2;
+  --very-light-pink-four: #fef6f1;
+  --yellowish-brown: #997600;
+  --ocre: #cc9e00;
+  --marigold: #ffc600;
+  --sun-yellow: #ffd133;
+  --sand-yellow: #ffdc66;
+  --egg-shell: #fff2c2;
+  --off-white: #fff8e0;
+  --off-white-two: #fffcf0;
+  --pine: #336f48;
+  --greenish: #449460;
+  --dark-mint: #55ba78;
+  --soft-green: #77c793;
+  --light-teal: #99d5ae;
+  --duck-egg-blue: #d6efdf;
+  --ice: #eaf6ee;
+  --ice-two: #f5fbf7;
+  --greenish-blue: #0d8183;
+  --topaz: #11a7a9;
+  --topaz-two: #14babd;
+  --aqua-marine: #43c7ca;
+  --seafoam-blue: #72d5d7;
+  --duck-egg-blue-two: #c7efef;
+  --ice-blue: #e2f6f7;
+  --ice-blue-two: #f1fbfb;
+  --blueberry: #443d83;
+  --blueberry-two: #584fa8;
+  --iris: #6258bc;
+  --dark-periwinkle: #8179c9;
+  --perrywinkle: #a09ad6;
+  --light-lavender: #dad7ef;
+  --pale-grey-two: #ecebf7;
+  --pale-grey-three: #f6f5fb;
+  --twilight-blue: #0d2168;
+  --royal: #112b86;
+  --royal-two: #133096;
+  --french-blue: #4259ab;
+  --faded-blue: #7182c0;
+  --powder-blue: #c7cee6;
+  --very-light-blue-two: #e2e6f2;
+  --pale-grey-four: #f1f3f9;
+  --coral-12: rgba(241, 81, 79, 0.12);
+  --light-green-50: rgba(143, 222, 141, 0.5);
+  --light-salmon-50: rgba(247, 190, 144, 0.5);
+  --white-two-36: rgba(255, 255, 255, 0.36);
+  --sky-50: rgba(138, 220, 243, 0.5);
+  --greenish-cyan-50: rgba(80, 227, 194, 0.5);
+  --sunny-yellow-50: rgba(248, 231, 28, 0.5);
+  --baby-purple-50: rgba(182, 155, 248, 0.5);
+  --scarlet-30: rgba(208, 2, 27, 0.3);
+  --baby-purple-two-50: rgba(237, 165, 238, 0.5);
+  --periwinkle-blue-50: rgba(156, 168, 249, 0.5);
+  --celery-50: rgba(208, 239, 159, 0.5);
+  --manilla-50: rgba(253, 246, 138, 0.5);
+  --light-blue-50: rgba(157, 201, 248, 0.5);
+  --bubblegum-pink-50: rgba(241, 148, 200, 0.5);
+  --beige-50: rgba(250, 214, 145, 0.5);
+  --baby-purple-three-50: rgba(205, 154, 247, 0.5);
+  --dark-blue-grey-50: rgba(15, 30, 41, 0.5);
+  --light-khaki-50: rgba(209, 239, 160, 0.5);
+}
+
+.form-test {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+  height: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  flex-direction: column;
+}
