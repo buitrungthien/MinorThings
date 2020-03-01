@@ -5,23 +5,14 @@ import { Field, reduxForm } from 'redux-form';
 import { Provider } from 'react-redux';
 import configureStore from './store';
 
+const required = value => value ? undefined : 'Required';
+
 let Form = props => (
   <form className='form-test'>
     <div className='form-group'>
-      <Field name='thien' component={Input} size='big' disabled />
+      <Field name='thien' component={Input} size='medium' label='Name:' validate={[required]} />
     </div>
-    <div className='form-group'>
-      <Field name='thien' component={Input} size='tiny' label='Name:' />
-    </div>
-    <div className='form-group'>
-      <Field name='thien' component={Input} size='small' label='Class:' />
-    </div>
-    <div className='form-group'>
-      <Field name='thien' component={Input} />
-    </div>
-    <div className='form-group'>
-      <Field name='thien' component={Input} size='big' label='Age:' />
-    </div>
+
   </form>
 );
 

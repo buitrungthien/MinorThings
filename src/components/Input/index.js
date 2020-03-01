@@ -14,15 +14,20 @@ const Input = ({ input, meta: { error, touched }, className, ...otherProps }) =>
       [styles['input__field--error']]: error && touched,
     },
   );
+  const errorSymbolClassNames = cs(
+    styles['input__symbol--error'],
+    'fas fa-exclamation',
+  );
   return (
     <div className={styles['input__wrapper']}>
-      {label && <label className={styles['input__label']} for={input.name}>{label}</label>}
+      {label && <label className={styles['input__label']} htmlFor={input.name}>{label}</label>}
       <input
         id={label ? input.name : null}
         className={inputClassNames}
         {...input}
         {...otherProps}
       />
+      {error && touched && <i className={errorSymbolClassNames}></i>}
     </div>
   );
 };

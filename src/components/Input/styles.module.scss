@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
+    position: relative;
 
     & > *:not(:last-child) {
       margin-right: 10px;
@@ -12,6 +13,7 @@
 
   &__label {
     font-weight: bold;
+    margin-bottom: 0;
     cursor: pointer;
   }
 
@@ -34,19 +36,6 @@
       background-color: var(--very-light-pink);
       color: var(--tomato);
       position: relative;
-
-      &:after {
-        content: "\26A0";
-        position: absolute;
-        top: 50%;
-        right: 10px;
-        transform: translate(-50%, -50%);
-        width: 25px;
-        height: 25px;
-        color: var(--tomato);
-        border-radius: 50%;
-        border: solid 1px var(--salmon);
-      }
     }
 
     &:hover {
@@ -64,6 +53,25 @@
       color: var(--light-grey-blue);
     }
   }
+}
+
+.input__symbol--error {
+  display: none;
+}
+
+.input__field--error + .input__symbol--error {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  right: 12px;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  color: var(--tomato);
+  border-radius: 50%;
+  border: solid 2px var(--tomato);
 }
 
 .tiny {
